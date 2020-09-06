@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Chat Window</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
+  </head>
+  <style>
+    li{
+        padding: 10px;
+        font-family: 'Lato', sans-serif;
+      }
+
+  </style>
+  <body>
+    <body>
+        <P>
+          Rules to text: <br>
+          <ul>
+            <li>Do not use capital letters number and special characters will update in v2.0</li>
+            <li>Your Keyword is the key to decoding, make sure it doesnt have repeated alphabets</li>
+            <li>nothing else, happy texting</li>
+
+
+          </ul>
+        </P>
+
+      <p>
+          <ol id="messageList">
+          </ol>
+        </p>
+    <div class="container">
+      <form id="chatBox">
+        <div class="row">
+          <div class="col-75">
+            <input
+            type="text"
+              id="message"
+              name="subject"
+              placeholder="Enter message"
+            ></input><span><button type="submit" onclick="KeywordEncoder()">send
+            </button></span>
+          </div>
+        </div>
+      </form>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase.js"></script>
+    <script src="./dbEntry.js"></script>
+   
+  </body>
+</html>
